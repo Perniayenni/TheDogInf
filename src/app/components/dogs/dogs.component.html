@@ -1,3 +1,6 @@
-<p>
- Aqui los Dogs
-</p>
+<div *ngFor="let dog of dogs; let i = index">
+  <div>Nombre: {{dog.nombre}}</div>
+    <div>Historia: {{dog.bio}}</div>
+  <button (click)='LeerMas(i)'>Leer Mas</button>
+
+</div>
