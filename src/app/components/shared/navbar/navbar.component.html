@@ -1,20 +1,32 @@
-<div class="container-fluid styleContainerNav">
-  <div class="row">
-    <div class="col-xs-8 col-sm-4 col-lg-4 col-md-4">
-      <img class="logoimg" src="../../../../assets/img/guao.png">
-    </div>
-    <div class="col-xs-4 col-sm-8 col-lg-8 col-md-8">
-      <div class="contenboton">
-        <div class="button_nav"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i>Home</a></div>
-        <div class="button_nav"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i>Razas</a></div>
-        <div class=" buscar">
-          <input class="buscarnav" type="text"><i class="fa fa-search" aria-hidden="true"></i> Buscar
+<div class="container-fluid styleContainerNav ">
+    <div class="row menuL">
+      <div class=" col-sm-4 col-lg-4 col-md-4">
+        <img class="logoimg" src="../../../../assets/img/guao.png">
+      </div>
+      <div class=" col-sm-8 col-lg-8 col-md-8">
+        <div (click)="MostarMenu=!MostarMenu" class="menu_bar">
+          <i class="fa fa-align-justify fa-2x" aria-hidden="true"> Menú </i>
         </div>
+        <div class="contenboton">
+          <div class="button_nav"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i> Home</a></div>
+          <div class="button_nav"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i> Razas</a></div>
+          <div class=" buscar">
+            <input class="buscarnav" type="text"><i class="fa fa-search" aria-hidden="true"></i> Buscar
+          </div>
+        </div>
+
       </div>
     </div>
 
+</div>
+<div *ngIf="MostarMenu" class="row menuS">
 
-  </div>
+  <div class="stylemenuxs">  <input class="buscarnavxs" type="text"><i class="fa fa-search" aria-hidden="true"></i> Buscar </div>
+
+  <div class="stylemenuxs"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i>Home</a></div>
+
+  <div class="stylemenuxs"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i>Razas</a></div>
+
 
 </div>
 

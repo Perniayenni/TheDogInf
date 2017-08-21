@@ -33,6 +33,7 @@
 
 a{
   color: #d08126;
+  text-align: center;
 }
 
 .buscar{
@@ -69,3 +70,53 @@ a{
   height: 70px;
 }
 
+
+/*Menus xs*/
+
+.stylemenuxs{
+  width: 100%;
+  height: auto;
+  background: #efd200;
+  text-align: center;
+  border-bottom: 2px solid white;
+  color:#d08126;
+}
+
+.buscarnavxs{
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  border: 0px solid #000000;
+}
+
+.menu_bar{
+  display: none;
+  color:#d08126;
+  cursor: pointer;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 918px) {
+  .menu_bar {
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    color: #d08126;
+  }
+
+  .contenboton {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 918px) {
+  .menuS{
+    display: none;
+  }
+
+}
