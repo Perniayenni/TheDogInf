@@ -9,13 +9,17 @@ import { DogsService, Dog } from '../../services/dogs.service';
 })
 export class BuscadorComponent implements OnInit {
   dogs:Dog[]=[];
+  termino:string;
 
   constructor(
     private _dogsService:DogsService,
     private activatedRoute:ActivatedRoute) { }
 
+
+
   ngOnInit() {
     this.activatedRoute.params.subscribe( params =>{
+      this.termino = (params['termino']);
       this.dogs=this._dogsService.buscarDogs(params['termino']);
     })
 

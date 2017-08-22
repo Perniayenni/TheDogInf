@@ -1,3 +1,7 @@
+<div class="row" *ngIf="dogs.length==0">
+  <small>No existe Resultados para {{termino}}</small>
+</div>
+<small>Buscando: {{termino}}</small>
 <div class="container-fluid Contenedor_dog">
   <div class="infdog" *ngFor="let dog of dogs; let i = index">
     <div class="container-imgdog">
