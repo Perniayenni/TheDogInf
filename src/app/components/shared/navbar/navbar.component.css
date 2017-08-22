@@ -30,7 +30,16 @@
   border: 0px solid #000000;
 
 }
-
+.button_buscar{
+  width: 80px;
+  height: 40px;
+  background: #efd200;
+  color: #d08126;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
 a{
   color: #d08126;
   text-align: center;

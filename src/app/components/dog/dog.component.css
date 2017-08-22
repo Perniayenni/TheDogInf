@@ -1,0 +1,43 @@
+.Containerdog{
+  margin-top: 30px;
+  width:100%;
+  height: 350px;
+  background: #efd200;
+  padding-top: 30px;
+  padding-left: 70px;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+
+.buttomregresar{
+  width: 95px;
+  height: 40px;
+  background: #efd200;
+  color: #d08126;
+  margin-top: 10px;
+  padding-top: 6px;
+  padding-left: 10px;
+  font-family: Always Forever Bold;
+  cursor: pointer;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+
+.stylyimgs{
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.fon-whire{
+  width: 95%;
+  height: 300px;
+  background: white;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}

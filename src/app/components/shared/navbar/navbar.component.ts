@@ -15,4 +15,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  buscarDogs(termino:string){
+    console.log(termino);
+  }
+
 }

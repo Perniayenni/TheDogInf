@@ -11,7 +11,8 @@
           <div class="button_nav"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i> Home</a></div>
           <div class="button_nav"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i> Razas</a></div>
           <div class=" buscar">
-            <input class="buscarnav" type="text"><i class="fa fa-search" aria-hidden="true"></i> Buscar
+            <input class="buscarnav" type="text" placeholder="Raza" (keyup.enter)='buscarDogs(buscarTexto.value)' #buscarTexto>
+            <button (click)="buscarDogs(buscarTexto.value)" class="button_buscar"> <i class="fa fa-search" aria-hidden="true"></i>Buscar</button>
           </div>
         </div>
 

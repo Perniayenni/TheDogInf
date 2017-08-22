@@ -7,7 +7,7 @@ export class DogsService {
     {
      nombre: 'San bernardo',
      bio: 'es una raza de perro originaria de los Alpes suizos y del norte de Italia. Es el perro boyero más famoso junto con el mastín del Pirineo y es muy próximo al gran boyero suizo. ',
-     img: 'assets/img/aquaman.png',
+     img: '../assets/img/San_Bernardo.jpg',
      aparicion: '¡1695',
      tamaño:'Grande'
   },
@@ -62,6 +62,10 @@ export class DogsService {
     getDogs(){
       return this.dogs;
 
+    }
+
+    getDog(idx:string){
+      return this.dogs[idx];
     }
 }
 
