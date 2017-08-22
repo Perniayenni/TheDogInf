@@ -67,6 +67,20 @@ export class DogsService {
     getDog(idx:string){
       return this.dogs[idx];
     }
+
+    buscarDogs(termino:string){
+      let dogsArr:Dog[]=[];
+      termino=termino.toLocaleLowerCase();
+      for ( let dog of this.dogs){
+        let nombre=dog.nombre.toLocaleLowerCase();
+
+        if (nombre.indexOf(termino)>=0){
+          dogsArr.push(dog);
+        }
+      }
+      return dogsArr;
+
+    }
 }
 
 export  interface Dog{
