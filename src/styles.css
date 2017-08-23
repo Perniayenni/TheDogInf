@@ -55,6 +55,7 @@ margin-right: 0px;
 
 .description{
   float: left;
+  font-size: 30px;
 }
 
 .button_vermas{
@@ -68,11 +69,23 @@ margin-right: 0px;
   padding-top: 1px;
   padding-left: 10px;
   align-content: center;
-  font-family: Always Forever Bold;
-
+  font-family: "Always Forever";
+  font-size: 20px;
   border-radius: 12px 12px 12px 12px;
   -moz-border-radius: 12px 12px 12px 12px;
   -webkit-border-radius: 12px 12px 12px 12px;
   border: 0px solid #000000;
 
+}
+
+/*Font*/
+
+@font-face {
+  font-family: "Asgalt Regular";
+  src: url(assets/fonts/AsgaltRegular/Asgalt-Regular.ttf), url(assets/fonts/AsgaltRegular/Asgalt-Regular.eot);
+}
+
+@font-face {
+  font-family: "Always Forever";
+  src: url(assets/fonts/AlwaysForeverBold/Always_Forever_Bold.ttf), url(assets/fonts/AlwaysForeverBold/Always_Forever_Bold.eot);
 }
