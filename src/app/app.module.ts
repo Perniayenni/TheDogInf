@@ -17,6 +17,8 @@ import { HomeComponent } from './components/home/home.component';
 import { DogsComponent } from './components/dogs/dogs.component';
 import { DogComponent } from './components/dog/dog.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { DogsGrandesComponent } from './components/dogsGrandes/dogsGrandes.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     HomeComponent,
     DogsComponent,
     DogComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    DogsGrandesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

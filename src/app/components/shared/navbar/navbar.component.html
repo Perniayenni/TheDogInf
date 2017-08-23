@@ -1,24 +1,22 @@
-<div class="container-fluid styleContainerNav ">
-    <div class="row menuL">
-      <div class=" col-sm-4 col-lg-4 col-md-4">
-        <img class="logoimg" src="../../../../assets/img/guao.png">
-      </div>
-      <div class=" col-sm-8 col-lg-8 col-md-8">
+<div class="row">
+  <div class="styleContainerNav">
+    <div class="conteimg">
+      <img class="logoimg" src="../../../../assets/img/guao.png">
+    </div>
+    <div class="contemas">
         <div (click)="MostarMenu=!MostarMenu" class="menu_bar">
           <i class="fa fa-align-justify fa-2x" aria-hidden="true"> Menú </i>
         </div>
-        <div class="contenboton">
-          <div class="button_nav"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i> Home</a></div>
-          <div class="button_nav"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i> Razas</a></div>
-          <div class=" buscar">
-            <input class="buscarnav" type="text" placeholder="Raza" (keyup.enter)='buscarDogs(buscarTexto.value)' #buscarTexto>
-            <button (click)="buscarDogs(buscarTexto.value)" class="button_buscar"> <i class="fa fa-search" aria-hidden="true"></i>Buscar</button>
-          </div>
+      <div class="contenboton">
+        <div class="button_nav"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i> Home</a></div>
+        <div class="button_nav"><a [routerLink]="['dogs']"><i class="fa fa-paw" aria-hidden="true"></i> Razas</a></div>
+        <div class=" buscar">
+          <input class="buscarnav" type="text" placeholder="Raza" (keyup.enter)='buscarDogs(buscarTexto.value)' #buscarTexto>
+          <button (click)="buscarDogs(buscarTexto.value)" class="button_buscar"> <i class="fa fa-search" aria-hidden="true"></i>Buscar</button>
         </div>
-
       </div>
     </div>
-
+  </div>
 </div>
 <div *ngIf="MostarMenu" class="row menuS">
 
@@ -32,8 +30,8 @@
 </div>
 
 
-
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

@@ -1,0 +1,78 @@
+body{
+margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+}
+.Contenedor_dog{
+  width: 90%;
+  height: auto;
+  background: red;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.infdog{
+  width:360px;
+  height: 450px;
+  background: #36ced4;
+  margin-right: 30px;
+  float: left;
+  margin-bottom: 20px;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+
+.container-imgdog{
+  width: 340px;
+  height: 400px;
+  background: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: Asgalt Regular;
+  color: #e47f0b;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+.imgdes{
+
+}
+
+
+.imgdog{
+  background: white;
+}
+
+.titulosdogs{
+  float: left;
+  font-weight: bold;
+}
+
+.description{
+  float: left;
+}
+
+.button_vermas{
+  width: 330px;
+  height: 20px;
+  background: #efd200;
+  float: left;
+  color: #d08126;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding-top: 1px;
+  padding-left: 10px;
+  align-content: center;
+  font-family: Always Forever Bold;
+
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+
+}

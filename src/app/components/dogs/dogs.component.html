@@ -1,4 +1,7 @@
-<div class="container-fluid Contenedor_dog">
+
+
+
+<div class="Contenedor_dog">
   <div class="infdog" *ngFor="let dog of dogs; let i = index">
       <div class="container-imgdog">
         <div class="imgdog"><img class="imgdes img-fluid" [src]="dog.img"></div>
@@ -12,10 +15,3 @@
   </div>
 
 </div>
-
-<!---<div *ngFor="let dog of dogs; let i = index">
-  <div>Nombre: {{dog.nombre}}</div>
-    <div>Historia: {{dog.bio}}</div>
-  <button (click)='LeerMas(i)'>Leer Mas</button>
-
-</div>-->
