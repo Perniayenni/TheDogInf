@@ -20,7 +20,7 @@
 </div>
 <div *ngIf="MostarMenu" class="row menuS">
 
-  <div class="stylemenuxs">  <input class="buscarnavxs" type="text"><i class="fa fa-search" aria-hidden="true"></i> Buscar </div>
+  <div class="stylemenuxs">  <input class="buscarnavxs" type="text" #buscarText (keyup)="buscarDogs(buscarText.value)"><i class="fa fa-search" aria-hidden="true"></i > Buscar </div>
 
   <div class="stylemenuxs"><a [routerLink]="['home']"> <i class="fa fa-home icoHome" aria-hidden="true"></i>Home</a></div>
 

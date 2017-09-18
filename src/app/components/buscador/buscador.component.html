@@ -2,17 +2,17 @@
   <small>No existe Resultados para {{termino}}</small>
 </div>
 <small>Buscando: {{termino}}</small>
-<div class="container-fluid Contenedor_dog">
+<div class=" Contenedor_dog">
   <div class="infdog" *ngFor="let dog of dogs; let i = index">
     <div class="container-imgdog">
       <div class="imgdog"><img class="imgdes img-fluid" [src]="dog.img"></div>
-      <div class="titulosdogs">Nombre: </div> <div class="description">{{dog.nombre}}</div>
+      <div class="titulosdogs">Nombre: </div> <div class="description">{{dog.raza}}</div>
       <br>
       <div class="titulosdogs">Historia: </div><div>{{dog.bio}}</div>
 
 
     </div>
-    <button (click)='LeerMas(i)' class="button_vermas"><i class="fa fa-plus" aria-hidden="true"></i> Leer Mas</button>
+    <button (click)='leerMas(i)' class="button_vermas"><i class="fa fa-plus" aria-hidden="true"></i> Leer Mas</button>
   </div>
 
 </div>

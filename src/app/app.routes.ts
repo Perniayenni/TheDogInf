@@ -11,7 +11,7 @@ const APP_ROUTES: Routes = [
   { path: 'dogs', component: DogsComponent },
   { path: 'buscar/:termino', component: BuscadorComponent },
   { path: 'dog/:id', component: DogComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', redirectTo: 'dogs' }
 ];
 
 export  const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);
