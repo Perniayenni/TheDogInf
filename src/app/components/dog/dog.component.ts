@@ -14,9 +14,9 @@ export class DogComponent {
     private activatedRoute: ActivatedRoute,
     private _dogsService:DogsService) {
 
-    this.activatedRoute.params.subscribe( params =>{
+    /*this.activatedRoute.params.subscribe( params =>{
       this.dog = this._dogsService.getDog(params['id']);
-    })
+    })*/
   }
 
 }

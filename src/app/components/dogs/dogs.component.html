@@ -1,26 +1,85 @@
 <div class="contenedorDogs">
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="circulo">
-       <div class="letratitulo">Grandes</div>
-        <div class="huellaGrande"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
+    <div class="row">
+      <div class="col-12">
+        <div class="contenedorNuevo" (click)="MostarModal=!MostarModal">
+          <i class="fa fa-plus stplus" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="circulo">
-        <div class="letratitulo">Medianos</div>
-        <div class="huellaMediana"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="circulo">
+         <div class="letratitulo">Grandes</div>
+          <div class="huellaGrande"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="circulo">
+          <div class="letratitulo">Medianos</div>
+          <div class="huellaMediana"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="circulo">
+          <div class="letratitulo">Pequeños</div>
+          <div class="huellaPequeños"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-4">
-      <div class="circulo">
-        <div class="letratitulo">Pequeños</div>
-        <div class="huellaPequeños"> <i class="fa fa-paw fa-5x" aria-hidden="true"></i></div>
-      </div>
-    </div>
+</div>
+<app-alerts [sms]="sms" [mostrarAlert]="mostrarAlert" ></app-alerts>
 
+<div *ngIf="MostarModal" class="modal animaated fadeIn fast" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="tituloModal">Nuevo Dog</h2>
+        <button type="button" class="close" (click)="MostarModal=!MostarModal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form [formGroup]='form' (ngSubmit)="GuardarDatos()">
+              <div class="contenidoNuevo">
+                <div class="float-left posicionI">Raza:</div>
+                <div class="float-left  "><input class="maxwi" type="text" formControlName="raza" ></div>
+              </div>
+
+              <div class="contenidoNuevo">
+                <div class="float-left posicionI">Aparición:</div>
+                <div class="float-left "><input class="maxwi" type="text" formControlName="aparicion"></div>
+              </div>
+
+              <div class="contenidoNuevo">
+                <div class="float-left posicionI">Tamaño:</div>
+                  <div class="float-left ">
+                        <select class="maxwi" formControlName="tamano">
+                          <option value="">Seleccione un Tamaño</option>
+                          <option class="letrapeque" *ngFor='let t of tamano'> {{t}} </option>
+                        </select>
+                </div>
+              </div>
+
+            <div class="contenidoNuevo">
+              <div class="float-left posicionI">Imagén:</div>
+              <div class="float-left "><input class="files" type="file"></div>
+            </div>
+
+              <div class="contenidoNuevo">
+                <div class="float-left posicionI">Biografía:</div>
+                <div class="float-left "><textarea class="styTexarea"  ></textarea></div>
+              </div>
+            <div class="modal-footer">
+              <button type="submit" class="botonesGenerales"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+              <button (click)="MostarModal=!MostarModal" type="submit" class="botonesGenerales"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
+            </div>
+          </form>
+        {{form.valid}}
+      </div>
+    </div>
   </div>
 </div>
+
 <!--
 <div class="Contenedor_dog">
   <div class="infdog" *ngFor="let dog of dogs; let i = index">

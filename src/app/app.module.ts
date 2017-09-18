@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { HttpModule } from '@angular/http';
 
 // Routes
 
@@ -19,6 +21,8 @@ import { DogComponent } from './components/dog/dog.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { DogsGrandesComponent } from './components/dogsGrandes/dogsGrandes.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AlertsComponent } from './components/alerts/alerts.component';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +33,14 @@ import { FooterComponent } from './components/footer/footer.component';
     DogComponent,
     BuscadorComponent,
     DogsGrandesComponent,
-    FooterComponent
+    FooterComponent,
+    AlertsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
     APP_ROUTING
   ],
   providers: [

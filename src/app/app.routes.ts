@@ -5,6 +5,7 @@ import { DogComponent } from "./components/dog/dog.component";
 import { BuscadorComponent } from "./components/buscador/buscador.component";
 
 
+
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'dogs', component: DogsComponent },

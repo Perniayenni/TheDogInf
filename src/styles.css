@@ -2,6 +2,7 @@ body{
 margin-right: 0px;
   margin-left: 0px;
   padding: 0px;
+
 }
 .Contenedor_dog{
   width: 90%;
@@ -41,6 +42,28 @@ margin-right: 0px;
 }
 .imgdes{
 
+}
+
+.botonesGenerales{
+  width: 150px;
+  height: 40px;
+  background: #efd200;
+  color: #d08126;
+  align-content: center;
+  font-family: "Always Forever";
+  font-size: 30px;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+
+.inputtextgenerales{
+  width: 200px;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
 }
 
 
@@ -89,3 +112,5 @@ margin-right: 0px;
   font-family: "Always Forever";
   src: url(assets/fonts/AlwaysForeverBold/Always_Forever_Bold.ttf), url(assets/fonts/AlwaysForeverBold/Always_Forever_Bold.eot);
 }
+
+

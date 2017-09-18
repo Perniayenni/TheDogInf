@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
-import { DogsService, Dog } from '../../services/dogs.service';
+//import { DogsService, Dog } from '../../services/dogs.service';
 
 @Component({
   selector: 'app-buscador',
@@ -8,20 +8,20 @@ import { DogsService, Dog } from '../../services/dogs.service';
   styleUrls: ['./buscador.component.css']
 })
 export class BuscadorComponent implements OnInit {
-  dogs:Dog[]=[];
+ // dogs:Dog[]=[];
   termino:string;
 
   constructor(
-    private _dogsService:DogsService,
+   // private _dogsService:DogsService,
     private activatedRoute:ActivatedRoute) { }
 
 
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe( params =>{
+   /* this.activatedRoute.params.subscribe( params =>{
       this.termino = (params['termino']);
       this.dogs=this._dogsService.buscarDogs(params['termino']);
-    })
+    })*/
 
   }
 

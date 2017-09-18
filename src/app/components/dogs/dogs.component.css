@@ -1,13 +1,13 @@
 .contenedorDogs{
   width: 100%;
   height: 400px;
-  margin-top: 40px;
+  margin-top: 0px;
   padding-left: 40px;
 
 }
 
 .circulo {
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 2%;
   width: 300px;
   height: 300px;
@@ -26,6 +26,7 @@
   -webkit-box-shadow: 3px 0px 9px 0px rgba(54,206,212,1);
   -moz-box-shadow: 3px 0px 9px 0px rgba(54,206,212,1);
   box-shadow: 3px 0px 9px 0px rgba(54,206,212,1);
+  cursor: pointer;
 
 
 }
@@ -42,6 +43,22 @@
 }
 .huellaPequeños{
   font-size: 10px;
+}
+
+.contenedorNuevo{
+  text-align: right;
+  color: #36ced4;
+  font-size: 60px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.modal{
+  padding-top: 3%;
+  display: block !important;
+  background: rgba(192,211,211,0.3);
 }
 
 @media screen and (max-width: 766px) {
@@ -65,3 +82,61 @@
 
 
 }
+
+.contenidoNuevo{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.posicionI{
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  font-family: Asgalt Regular;
+  color: #e47f0b;
+  font-size: 25px;
+}
+
+.maxwi{
+  width: 350px;
+  height: 30px;
+  border:1px solid gray;
+  font-family: Asgalt Regular;
+  color: #e47f0b;
+  font-size: 25px;
+}
+
+.styTexarea{
+  width: 350px;
+  height: 60px;
+  border:1px solid gray;
+  resize: none;
+
+}
+
+.files{
+  width: 90px;
+  height: 40px;
+  font-size: 15px;
+  font-family: "Times New Roman";
+  background: #ffffff;
+  border-radius: 12px 12px 12px 12px;
+  -moz-border-radius: 12px 12px 12px 12px;
+  -webkit-border-radius: 12px 12px 12px 12px;
+  border: 0px solid #000000;
+}
+
+.tituloModal{
+  font-size: 30px;
+  font-family: Asgalt Regular;
+  color: #e47f0b;
+
+}
+
+.letrapeque{
+  font-family: Asgalt Regular;
+  color: #e47f0b;
+  font-size: 30px;
+}
+
